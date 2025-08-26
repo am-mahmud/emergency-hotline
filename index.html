@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Daisy UI & Tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Emergency Service</title>
+</head>
+<body>
+
+    <!-- Header section -->
+    <header>
+        <nav class="mt-6 md:mt-3 w-11/12 mx-auto flex justify-between items-center">
+            <!-- Logo div -->
+            <div class="flex items-center gap-3">
+                <div>
+                    <img class="w-12 h-12" src="./assets/logo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-[#006747] md:text-xl font-bold">Emergency<br>Service</h1>
+                </div>
+            </div>
+
+            <!-- Medium and Large Screen View -->
+            <div class="hidden md:flex justify-between gap-3 items-center">
+                 <!-- Button 1-->
+                <button class="bg-[#ecfff0] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20 btn-nav">
+                    <div>
+                        <p class="text-base">0</p>
+                    </div>
+                    <div>
+                        <img class="w-4 h-4" src="./assets/heart.png" alt="">
+                    </div>
+                </button>
+
+                <!-- Button 2-->
+                <button class="bg-[#ecfff0] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20 btn-nav">
+                    <div>
+                        <p class="text-base">100</p>
+                    </div>
+                    <div>
+                        <img class="w-4 h-4" src="./assets/coin.png" alt="">
+                    </div>
+                </button>
+
+                <!-- Button 3-->
+                <button class="bg-[#00a63e] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-24 btn-nav">
+                    <div>
+                        <p class="text-base text-white"><span>100</span> Copy</p>
+                    </div>
+                </button>
+
+            </div>
+
+            <!-- Mobile View -->
+
+            <div class="md:hidden dropdown dropdown-bottom dropdown-center rounded-lg">
+                <div tabindex="0" role="button" class="btn m-1">Check</div>
+                    <ul  tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-24 shadow-sm">
+                        <li>
+                             <!-- Button 1-->
+                            <button class="bg-[#ecfff0] flex gap-2 justify-center items-center p-1 rounded-md w-20 btn-nav">
+                                <div>
+                                    <p class="text-base">0</p>
+                                </div>
+                                <div>
+                                    <img class="w-4 h-4" src="./assets/heart.png" alt="">
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <!-- Button 2-->
+                            <button class="bg-[#ecfff0] flex gap-2 justify-center items-center p-1 rounded-md w-20 my-2 btn-nav">
+                                <div>
+                                    <p class="text-base">100</p>
+                                </div>
+                                <div>
+                                    <img class="w-4 h-4" src="./assets/coin.png" alt="">
+                                </div>
+                            </button>
+                        </li>
+                        <li>
+                            <!-- Button 3-->
+                            <button class="bg-[#00a63e] flex gap-2 justify-center items-center p-1 rounded-md w-20 btn-nav">
+                                <div>
+                                    <p class="text-sm text-white"><span>100 </span> Copy</p>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
+            </div>
+           
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+
+        <!-- Banner section -->
+         <section>
+            <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] mt-10 p-16 flex flex-col justify-center items-center text-center">
+                <div>
+                    <img class="w-32 h-32" src="./assets/logo.png" alt="">
+                </div>
+                <div class="my-4">
+                    <h1 class="text-4xl text-white font-bold">Emergency Service Directory</h1>
+                </div>
+                <div>
+                    <p class="text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+                </div>
+            </div>
+         </section>
+
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+
+    </footer>
+    
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
