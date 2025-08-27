@@ -2,6 +2,17 @@ function getElement(id) {
   return document.getElementById(id);
 }
 
+function getLocalTime() {
+      let now = new Date();
+
+      let hours = String(now.getHours()).padStart(2, "0");
+      let minutes = String(now.getMinutes()).padStart(2, "0");
+      let seconds = String(now.getSeconds()).padStart(2, "0");
+
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+
 let totalLoveCount = 0;
 
 getElement("cards-container").addEventListener("click", function (e) {
@@ -48,6 +59,30 @@ getElement("cards-container").addEventListener("click", function (e) {
     for (let i = 0; i < coinCounters.length; i++) {
       coinCounters[i].innerText = totalCoinCount;
     }
+
+    const historyList = getElement("history-list");
+
+    console.log("1st click");
+    
+    const newCallHistory = document.createElement("div");
+    newCallHistory.innerHTML = `
+      <div class="flex flex-row md:flex-col md:text-center lg:flex-row justify-between items-center px-1 py-2">
+        <div class="text-left">
+          <div>
+            <h1 class="font-bold">${serviceName}</h1>
+          </div>
+          <div>
+            <p>${serviceNumber}</p>
+          </div>
+        </div>
+        <div>
+          <p>${getLocalTime()}</p>
+        </div>
+      </div>
+    `;
+
+    historyList.append(newCallHistory);
+
   }
 });
 
@@ -75,8 +110,16 @@ getElement("cards-container").addEventListener("click", function (e) {
     for (let i = 0; i < copyCounters.length; i++) {
       copyCounters[i].innerText = totalCopyCount;
     }
+
   }
 });
 
 
+// Clear button
 
+document.getElementById("btn-clear").addEventListener("click", function () {
+  const historyList = document.getElementById("history-list");
+
+  historyList.innerHTML = "";
+  console.log("2nd click");
+});
