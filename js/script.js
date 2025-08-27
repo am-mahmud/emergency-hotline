@@ -7,7 +7,7 @@ function getElement(id) {
 
 let totalLoveCount = 0;
 
-getElement("cards-container-1").addEventListener("click", function (e){
+getElement("cards-container").addEventListener("click", function (e){
     if (e.target.className.includes("btn-love")){
         totalLoveCount += 1;
         
@@ -20,7 +20,7 @@ getElement("cards-container-1").addEventListener("click", function (e){
 // Coin 
 let totalCoinCount = 100;
 
-getElement("cards-container-1").addEventListener("click", function (e) {
+getElement("cards-container").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-call")) {
     const callButton = e.target;
 
@@ -47,7 +47,7 @@ getElement("cards-container-1").addEventListener("click", function (e) {
 
 let totalCopyCount = 0;
 
-getElement("cards-container-1").addEventListener("click", function (e) {
+getElement("cards-container").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-copy")) {
     const copyButton = e.target;
 
