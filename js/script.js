@@ -74,7 +74,7 @@ getElement("cards-container").addEventListener("click", function (e) {
           </div>
         </div>
         <div>
-          <p>${getLocalTime}</p>
+          <p>${getLocalTime()}</p>
         </div>
       </div>
     `;
