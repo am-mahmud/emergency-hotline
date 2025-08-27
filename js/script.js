@@ -2,18 +2,16 @@ function getElement(id) {
   return document.getElementById(id);
 }
 
-const now = new Date();
-
-const options = {
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-  hour12: true 
-};
-
-const getLocalTime = now.toLocaleString('en-US', options);
-
-let totalLoveCount = 0;
+function getLocalTime() {
+  const now = new Date();
+  const options = {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    hour12: true 
+  };
+  return now.toLocaleString('en-US', options);
+}
 
 getElement("cards-container").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-love")) {
