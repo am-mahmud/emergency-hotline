@@ -459,22 +459,37 @@
 
                 
                 <aside class="col-span-9 md:col-span-3 bg-white p-5 md:p-2 rounded-lg">
-                <div class="flex flex-row md:flex-col-reverse lg:flex-row justify-between items-center gap-3">
-                    <!-- History -->
-                    <div class="flex  gap-2">
-                        <div>
-                            <i class="fa-regular fa-clock fa-lg"></i>
+                    <div class="flex flex-row md:flex-col-reverse lg:flex-row justify-between items-center gap-3">
+                        <!-- History -->
+                        <div class="flex  gap-2">
+                            <div>
+                                <i class="fa-regular fa-clock fa-lg"></i>
+                            </div>
+                            <div>
+                                <h1>Call History</h1>
+                            </div>
                         </div>
+                        <!-- Clear Button -->
                         <div>
-                            <h1>Call History</h1>
+                            <button class="bg-[#00a63e] text-white px-2 py-2 rounded-xl w-24 btn-nav">Clear</button>
                         </div>
                     </div>
-                    <!-- Clear Button -->
-                    <div>
-                        <button class="bg-[#00a63e] text-white px-2 py-2 rounded-xl w-24 btn-nav">Clear</button>
-                    </div>
-                </div>
                 
+                    <!-- History show section -->
+                    <div id="history-container" class="flex flex-row md:flex-col md:text-center lg:flex-row justify-between items-center px-1">
+                        <div class="mt-5">
+                            <div>
+                                <h1>Service Name</h1>
+                            </div>
+                            <div>
+                                <p>Service Number</p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <p>Time</p>
+                        </div>
+                    </div>
                 </aside>
           </section>
 
