@@ -91,12 +91,9 @@ getElement("cards-container").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-copy")) {
     const copyButton = e.target;
 
-    const serviceName =
-      copyButton.parentNode.parentNode.parentNode.children[1].innerText;
-    const serviceNumber =
-      copyButton.parentNode.parentNode.parentNode.children[3].innerText;
+    const serviceName = copyButton.parentNode.parentNode.parentNode.children[1].innerText;
+    const serviceNumber = copyButton.parentNode.parentNode.parentNode.children[3].innerText;
 
-    
     navigator.clipboard.writeText(serviceNumber);
 
     alert(
@@ -106,7 +103,6 @@ getElement("cards-container").addEventListener("click", function (e) {
 
     totalCopyCount = totalCopyCount + 1;
 
-    
     const copyCounters = document.querySelectorAll(".copy-count span");
     for (let i = 0; i < copyCounters.length; i++) {
       copyCounters[i].innerText = totalCopyCount;
@@ -114,6 +110,23 @@ getElement("cards-container").addEventListener("click", function (e) {
 
   }
 });
+
+getElement("cards-container").addEventListener("click", function (e) {
+  if (e.target.className.includes("copy-number")) {
+    const copyNumber = e.target;
+
+    const copyEmergencyNumber = copyNumber.parentNode.children[3].innerText;
+   
+
+    navigator.clipboard.writeText(copyEmergencyNumber);
+
+    alert(
+      "Service Number Copied"
+    );
+
+  }
+});
+
 
 
 // Clear button
