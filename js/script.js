@@ -51,7 +51,7 @@ getElement("cards-container-1").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-copy")) {
     const copyButton = e.target;
 
-    const serviceName = callButton.parentNode.parentNode.parentNode.children[1].innerText;
+    const serviceName = copyButton.parentNode.parentNode.parentNode.children[1].innerText;
     console.log(serviceName);
 
     const serviceNumber = copyButton.parentNode.parentNode.parentNode.children[3].innerText;
