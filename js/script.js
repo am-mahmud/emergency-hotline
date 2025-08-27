@@ -98,10 +98,13 @@ getElement("cards-container").addEventListener("click", function (e) {
     const serviceNumber =
       copyButton.parentNode.parentNode.parentNode.children[3].innerText;
 
-    console.log("Copied:", serviceName, serviceNumber);
-
     
     navigator.clipboard.writeText(serviceNumber);
+
+    alert(
+      "Service Number Copied"
+    );
+    
 
     totalCopyCount = totalCopyCount + 1;
 
