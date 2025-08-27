@@ -14,7 +14,7 @@
 
     <!-- Header section -->
     <header>
-        <nav class="mt-6 md:mt-3 w-11/12 mx-auto flex justify-between items-center">
+        <nav class="mt-6 md:mt-3 w-11/12 mx-auto flex justify-between items-start md:items-center">
             <!-- Logo div -->
             <div class="flex items-center gap-3">
                 <div>
@@ -42,7 +42,7 @@
                 <!-- Button 2-->
                 <button class="bg-[#ecfff0] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20">
                     <div>
-                        <p class="text-base coin-count">0</p>
+                        <p class="text-base coin-count">100</p>
                     </div>
                     <div>
                         <img class="w-4 h-4" src="./assets/coin.png" alt="">
@@ -58,26 +58,57 @@
 
             </div>
 
-            <!-- Mobile View -->
 
-            <div class="md:hidden dropdown dropdown-bottom dropdown-center rounded-lg">
+
+            <!-- Mobile View -->
+            <div class="flex flex-col md:hidden justify-between gap-3 items-center">
+                 <!-- Button 1-->
+                <button class="bg-[#ecfff0] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20 btn-nav-love">
+                    <!-- Love Dynamic Part -->
+                    <div>
+                        <p class="text-base love-count">0</p>
+                    </div>
+                    <!-- Love Static Part -->
+                    <div>
+                        <img class="w-4 h-4" src="./assets/heart.png" alt="">
+                    </div>
+                </button>
+
+                <!-- Button 2-->
+                <button class="bg-[#ecfff0] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20">
+                    <div>
+                        <p class="text-base coin-count">100</p>
+                    </div>
+                    <div>
+                        <img class="w-4 h-4" src="./assets/coin.png" alt="">
+                    </div>
+                </button>
+
+                <!-- Button 3-->
+                <button class="bg-[#00a63e] flex gap-2 justify-center items-center px-2 py-2  rounded-lg w-20">
+                    <div>
+                        <p class="text-base text-white copy-count"><span>0</span> Copy</p>
+                    </div>
+                </button>
+
+            </div>
+
+
+            <!-- <div class="md:hidden dropdown dropdown-bottom dropdown-center rounded-lg">
                 <div tabindex="0" role="button" class="btn m-1">Check</div>
                     <ul  tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 w-24 shadow-sm">
                         <li>
-                             <!-- Button 1-->
                             <button class="bg-[#ecfff0] flex gap-2 justify-center items-center p-1 rounded-md w-20 btn-nav-love">
-                                <!-- Love Dynamic Part -->
                                 <div>
                                     <p class="text-base love-count">0</p>
                                 </div>
-                                <!-- Love Static Part -->
                                 <div>
                                     <img class="w-4 h-4" src="./assets/heart.png" alt="">
                                 </div>
                             </button>
                         </li>
                         <li>
-                            <!-- Button 2-->
+                           
                             <button class="bg-[#ecfff0] flex gap-2 justify-center items-center p-1 rounded-md w-20 my-2">
                                 <div>
                                     <p class="text-base coin-count">100</p>
@@ -88,7 +119,7 @@
                             </button>
                         </li>
                         <li>
-                            <!-- Button 3-->
+                          
                             <button class="bg-[#00a63e] flex gap-2 justify-center items-center p-1 rounded-md w-20">
                                 <div>
                                     <p class="text-sm text-white copy-count"><span>0</span> Copy</p>
@@ -96,12 +127,12 @@
                             </button>
                         </li>
                     </ul>
-            </div>
+            </div> -->
            
         </nav>
     </header>
 
-    <!-- Main section -->
+
     <main>
 
         <!-- Banner section -->
@@ -119,10 +150,9 @@
             </div>
          </section>
 
-        
+        <!-- Main Layout -->
          <section class="bg-[#ecfff0] py-10">
 
-    
           <section class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
 
                 <section class="col-span-9 border-1 border-red-500">
@@ -429,7 +459,7 @@
                 </section>
 
                 
-                <aside class="col-span-9 md:col-span-3 bg-white p-2 rounded-lg border-1 border-red-500">
+                <aside class="col-span-9 md:col-span-3 bg-white p-5 md:p-2 rounded-lg border-1 border-red-500">
                 <div class="flex flex-row md:flex-col-reverse lg:flex-row justify-between items-center gap-3">
                     <!-- History -->
                     <div class="flex  gap-2">
@@ -460,7 +490,9 @@
     </footer>
     
     <!-- Script -->
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+
+    <script src="./js/updated-script.js"></script>
 
 </body>
 </html>

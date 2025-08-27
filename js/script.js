@@ -14,8 +14,14 @@ getElement("cards-container").addEventListener("click", function (e){
         const loveCountElement = document.querySelector(".love-count");
 
         loveCountElement.innerText = totalLoveCount;
+
+        console.log("love found");
+
+        
     }
 });
+
+
 
 // Coin 
 let totalCoinCount = 100;
