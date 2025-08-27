@@ -2,16 +2,16 @@ function getElement(id) {
   return document.getElementById(id);
 }
 
-function getLocalTime() {
-      let now = new Date();
+const now = new Date();
 
-      let hours = String(now.getHours()).padStart(2, "0");
-      let minutes = String(now.getMinutes()).padStart(2, "0");
-      let seconds = String(now.getSeconds()).padStart(2, "0");
+const options = {
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  hour12: true 
+};
 
-  return `${hours}:${minutes}:${seconds}`;
-}
-
+const getLocalTime = now.toLocaleString('en-US', options);
 
 let totalLoveCount = 0;
 
@@ -69,14 +69,14 @@ getElement("cards-container").addEventListener("click", function (e) {
       <div class="flex flex-row md:flex-col md:text-center lg:flex-row justify-between items-center px-1 py-2">
         <div class="text-left">
           <div>
-            <h1 class="font-bold">${serviceName}</h1>
+            <h1 class="font-bold text-sm">${serviceName}</h1>
           </div>
           <div>
             <p>${serviceNumber}</p>
           </div>
         </div>
         <div>
-          <p>${getLocalTime()}</p>
+          <p>${getLocalTime}</p>
         </div>
       </div>
     `;
