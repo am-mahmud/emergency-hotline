@@ -13,6 +13,8 @@ function getLocalTime() {
   return now.toLocaleString('en-US', options);
 }
 
+let totalLoveCount = 0;
+
 getElement("cards-container").addEventListener("click", function (e) {
   if (e.target.className.includes("btn-love")) {
     totalLoveCount = totalLoveCount + 1;
