@@ -24,7 +24,7 @@ getElement("cards-container").addEventListener("click", function (e) {
       loveCounters[i].innerText = totalLoveCount;
     }
 
-    console.log("love found");
+    // console.log("love found");
   }
 });
 
@@ -62,7 +62,7 @@ getElement("cards-container").addEventListener("click", function (e) {
 
     const historyList = getElement("history-list");
 
-    console.log("1st click");
+    // console.log("1st click");
     
     const newCallHistory = document.createElement("div");
     newCallHistory.innerHTML = `
@@ -131,11 +131,9 @@ getElement("cards-container").addEventListener("click", function (e) {
 
 
 
-// Clear button
-
 document.getElementById("btn-clear").addEventListener("click", function () {
   const historyList = document.getElementById("history-list");
 
   historyList.innerHTML = "";
-  console.log("2nd click");
+    // console.log("2nd click");
 });
